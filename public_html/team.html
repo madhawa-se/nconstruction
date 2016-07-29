@@ -143,6 +143,10 @@
 
             }
             /* end team member */
+            /*slide */
+            .slide-right,.slide-left{
+                font-size: 100px;
+            }
 
         </style>
         <script src="js/jquery.js"></script>
@@ -152,7 +156,7 @@
             // Carousel Auto-Cycle
             $(document).ready(function () {
                 $('.carousel').carousel({
-                    interval: 6000
+                    interval: 60000
                 })
             });
 
@@ -176,109 +180,102 @@
                 <h4 class="title">we have a awesome team</h4>
                 <div class="title-hr"></div>
             </div>
-            <div class="col-xs-12 slider-wrapper" ng-controller="userCTRL">
-
-                <div class="carousel slide" id="myCarousel">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <ul class="thumbnails">
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="1" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="2" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="3" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="4" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="5" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="6" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="7" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="8" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                            </ul>
-                        </div><!-- /Slide1 --> 
-                        <div class="item">
-                            <ul class="thumbnails">
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="9" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="10" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="11" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="12" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="13" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="14" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="15" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="16" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                            </ul>
-                        </div><!-- /Slide2 --> 
-                        <div class="item">
-                            <ul class="thumbnails">
-                                <li class="col-sm-3">	
-                                <team-user name="madhawa" id="17" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="18" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="19" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="20" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="21" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="22" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="23" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                                <li class="col-sm-3">
-                                <team-user name="madhawa" id="24" role='draftman' specialty='university of colombo'></team-user>
-                                </li>
-                            </ul>
-                        </div><!-- /Slide3 --> 
-                    </div>
-
-
-                    <nav>
-                        <ul class="control-box pager">
-                            <li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
-                            <li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></li>
+        </div>
+        <div class="col-xs-12 slider-wrapper" ng-controller="userCTRL">
+            <div class="col-lg-1" data-slide="next" href="#myCarousel"><i class="glyphicon glyphicon-chevron-left slide-left"></i></div>
+            <div class="carousel slide col-lg-10" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <ul class="thumbnails">
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="1" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="2" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="3" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="4" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="5" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="6" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="7" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="8" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
                         </ul>
-                    </nav>
-                    <!-- /.control-box -->   
+                    </div><!-- /Slide1 --> 
+                    <div class="item">
+                        <ul class="thumbnails">
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="9" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="10" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="11" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="12" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="13" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="14" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="15" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="16" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                        </ul>
+                    </div><!-- /Slide2 --> 
+                    <div class="item">
+                        <ul class="thumbnails">
+                            <li class="col-sm-3">	
+                            <team-user class="team-user" name="madhawa" id="17" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="18" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="19" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="20" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="21" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="22" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="23" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                            <li class="col-sm-3">
+                            <team-user class="team-user" name="madhawa" id="24" role='draftman' specialty='university of colombo'></team-user>
+                            </li>
+                        </ul>
+                    </div><!-- /Slide3 --> 
+                </div>
+                <!-- /.control-box -->   
 
-                </div><!-- /#myCarousel -->
+            </div><!-- /#myCarousel -->
 
-            </div><!-- /.col-xs-12 -->          
+            <div class="col-lg-1" data-slide="prev" href="#myCarousel"><i class="glyphicon glyphicon-chevron-right slide-right"></i></div>
+        </div><!-- /.col-xs-12 -->          
 
-        </div><!-- /.container -->
     </body>
 </html>
